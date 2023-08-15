@@ -1,27 +1,3 @@
-/*==========================================================================================*
-Sponsor Name        : 亘喜生物科技（上海）有限公司
-Study   ID          : GC012F-321
-Project Name        : GC012F 注射液治疗适合移植的高危型新诊断多发性骨髓瘤患者的临床研究
-Program Name        : t-14-2-1-3.sas
-Program Path        : E:\Project\GC012F-321\csr\dev\pg\tables
-Program Language    : SAS v9.4
-_____________________________________________________________________________________________
- 
-Purpose             : to create output T-14-02-01-03.rtf
- 
-Macro Calls         : %Mstrtrtf2, %preview 
- 
-Input File          : 
-Output File         : E:\Project\GC012F-321\csr\dev\output\tables\T-14-02-01-03.rtf
- 
-_____________________________________________________________________________________________
-Version History     : 
-Version     Date           Programmer                Description
--------     ----------     ----------                -----------
-1.0         2023-03-09     weineng.zhou              Creation
- 
-============================================================================================*/
-
 
 dm "log;clear;"; 
 proc datasets lib=work kill nolist memtype=data; 

@@ -1,28 +1,4 @@
-﻿/*==========================================================================================*
-Sponsor Name        : 博生吉医药科技（苏州）有限公司
-Study   ID          : PG-CART-07-001
-Project Name        : PA3-17 注射液治疗成人复发/难治性 CD7 阳性血液淋巴系统恶性肿瘤患者的开放标签、剂量递增的 I 期临床研究
-Program Name        : t-14-3-2-1-1.sas
-Program Path        : E:\Project\PG-CART-07-001\csr\dev\pg\tables
-Program Language    : SAS v9.4
-_____________________________________________________________________________________________
- 
-Purpose             : to create output T-14-03-02-01-01.rtf
- 
-Macro Calls         : %Mstrtrtf2, %preview 
- 
-Input File          : 
-Output File         : E:\Project\PG-CART-07-001\csr\dev\output\tables\T-14-03-02-01-01.rtf
- 
-_____________________________________________________________________________________________
-Version History     : 
-Version     Date           Programmer                Description
--------     ----------     ----------                -----------
-1.0         2023-06-29     weineng.zhou                  Creation
- 
-============================================================================================*/
-
-
+﻿
 dm "log;clear;"; 
 proc datasets lib=work kill nolist memtype=data; 
 quit;

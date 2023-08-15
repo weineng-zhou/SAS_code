@@ -1,27 +1,3 @@
-/*==========================================================================================*
-Sponsor Name        : 苏州西克罗制药有限公司
-Study   ID          : EDP125P3101
-Project Name        : 评价 EDP125 治疗儿童和青少年注意缺陷/多动障碍安全性和有效性的多中心、随机、双盲、安慰剂平行对照 III期临床研究
-Program Name        : f-14-2-2-7.sas
-Program Path        : E:\Project\EDP125P3101\csr\dev\pg\figures
-Program Language    : SAS v9.4
-_____________________________________________________________________________________________
- 
-Purpose             : to create output F-14-02-02-07.rtf
- 
-Macro Calls         : %Mstrtrtf2, %preview 
- 
-Input File          : 
-Output File         : E:\Project\EDP125P3101\csr\dev\output\figures\F-14-02-02-07.rtf
- 
-_____________________________________________________________________________________________
-Version History     : 
-Version     Date           Programmer                Description
--------     ----------     ----------                -----------
-1.0         2022-10-24     weineng.zhou              Creation
- 
-============================================================================================*/
-
 
 dm "log;clear;"; 
 proc datasets lib=work kill nolist memtype=data; 

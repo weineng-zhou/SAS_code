@@ -1,26 +1,3 @@
-/*==========================================================================================*
-Sponsor Name        : 葛兰素史克集团公司
-Study   ID          : 214113
-Project Name        : 中国狼疮肾患者长期肾脏结局的回顾性研究（LN LOTUS研究）
-Program Name        : f-14-2-1-1.sas
-Program Path        : E:\Project\214113\csr\dev\pg\figures
-Program Language    : SAS v9.4
-_____________________________________________________________________________________________
- 
-Purpose             : to create output F-14-02-01-01.rtf
- 
-Macro Calls         : %Mstrtrtf2, %preview 
- 
-Input File          : 
-Output File         : E:\Project\214113\csr\dev\output\figures\F-14-02-01-01.rtf
- 
-_____________________________________________________________________________________________
-Version History     : 
-Version     Date           Programmer                Description
--------     ----------     ----------                -----------
-1.0         2023-07-19     weineng.zhou              Creation
- 
-============================================================================================*/
 
 
 dm "log;clear;"; 

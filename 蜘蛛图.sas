@@ -1,27 +1,4 @@
-/*==========================================================================================*
-Sponsor Name        : 福建海西新药创制有限公司
-Study   ID          : HXP019-CTPI-01
-Project Name        : 一项评价口服 C019199 片单次和多次给药在中国局部晚期或转移性实体瘤患者中的安全性、 耐受性、 药代动力学特征和抗肿瘤活性的多中心、 开放、 剂量递增的 I 期临床研究
-Program Name        : f-14-2-3-3.sas
-Program Path        : Z:\Project\HXP019-CTPI-01\csr\dev\pg\figures
-Program Language    : SAS v9.4
-_____________________________________________________________________________________________
- 
-Purpose             : to create output F-14-02-03-03.rtf
- 
-Macro Calls         : %Mstrtrtf2, %preview 
- 
-Input File          : ADSL, ADRS, ADTTE
-Output File         : Z:\Project\HXP019-CTPI-01\csr\dev\output\figures\F-14-02-03-03.rtf
- 
-_____________________________________________________________________________________________
-Version History     : 
-Version     Date           Programmer                Description
--------     ----------     ----------                -----------
-1.0         2022-07-06     Weineng Zhou              Creation
- 
-============================================================================================*/
- 
+
 
 dm "log;clear;"; 
 proc datasets lib=work kill nolist memtype=data; 

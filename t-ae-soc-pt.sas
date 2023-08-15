@@ -1,26 +1,3 @@
-/*==========================================================================================*
-Sponsor Name        : 
-Study   ID          : 
-Project Name        : 
-Program Name        : t-soc-pt.sas
-Program Path        : E:\Project\EDP125P3101\csr\val\pg\tables
-Program Language    : SAS v9.4
-_____________________________________________________________________________________________
- 
-Purpose             : to create output T-14-03-01-03-01.rtf, T-14-03-01-03-02.rtf, T-14-03-01-03-03.rtf, T-14-03-01-03-04.rtf, T-14-03-01-03-05.rtf, T-14-03-01-03-06.rtf, T-14-03-01-03-07.rtf, T-14-03-01-03-08.rtf
- 
-Macro Calls         : %Mstrtrtf2, %preview 
- 
-Input File          : 
-Output File         : E:\Project\EDP125P3101\csr\dev\output\tables\T-14-03-01-03-01.rtf 
-_____________________________________________________________________________________________
-Version History     : 
-Version     Date           Programmer                Description
--------     ----------     ----------                -----------
-1.0         2022-11-04     weineng.zhou              Creation
- 
-============================================================================================*/
-
 
 dm "log;clear;"; 
 proc datasets lib=work kill nolist memtype=data; 
@@ -298,7 +275,7 @@ run;
 %end;
 
 
-%let header_list = 主系统器官分类~@w@w@w@w首选术语|低剂量组~N=&N1~n(%)|中剂量组~N=&N2~n(%)|高剂量组~N=&N3~n(%)|合计~N=&N4~n(%);
+%let header_list =   系统   俜   ~@w@w@w@w  选    | 图     ~N=&N1~n(%)| 屑     ~N=&N2~n(%)| 呒     ~N=&N3~n(%)| 霞 ~N=&N4~n(%);
 
 
 options papersize=letter orientation=landscape nodate nonumber center missing=" " nobyline; 

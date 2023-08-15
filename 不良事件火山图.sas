@@ -1,26 +1,3 @@
-/*==========================================================================================*
-Sponsor Name        : 
-Study   ID          : 
-Project Name        : 
-Program Name        : f-ae-volcano.sas
-Program Path        : E:\Project
-Program Language    : SAS v9.4
-_____________________________________________________________________________________________
- 
-Purpose             : to create output 
- 
-Macro Calls         : %Mstrtrtf2, %preview 
- 
-Input File          : 
-Output File         : E:\Project\
-_____________________________________________________________________________________________
-Version History     : 
-Version     Date           Programmer                Description
--------     ----------     ----------                -----------
-1.0         2022-11-04     weineng.zhou              Creation
- 
-============================================================================================*/
-
 
 dm "log;clear;"; 
 proc datasets lib=work kill nolist memtype=data; 
@@ -137,7 +114,7 @@ run;
 
 data RelativeRisks1;
 	set RelativeRisks;
-	if STATISTIC="Ïà¶Ô·çÏÕ£¨µÚ 1 ÁÐ£©";
+	if STATISTIC="ï¿½ï¿½Ô·ï¿½ï¿½Õ£ï¿½ï¿½ï¿½ 1 ï¿½Ð£ï¿½";
 	AEPT=aedecod;
 	RR=value;
 	keep AESOC AEPT RR;

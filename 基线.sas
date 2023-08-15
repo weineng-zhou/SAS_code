@@ -1,27 +1,3 @@
-/*==========================================================================================*
-Sponsor Name        : 珐博进（中国） 医药技术开发有限公司（珐博进中国）
-Study   ID          : FGCL-4592-858
-Project Name        : 一项评估罗沙司他低起始剂量给药方案治疗慢性肾脏病非透析贫血患者的有效性和安全性的随机、 对照、 开放标签、 多中心研究
-Program Name        : t-14-1-2-4.sas
-Program Path        : E:\Project\FGCL-4592-858\csr\dev\pg\tables
-Program Language    : SAS v9.4
-_____________________________________________________________________________________________
- 
-Purpose             : to create output T-14-01-02-04.rtf
- 
-Macro Calls         : %Mstrtrtf2, %preview 
- 
-Input File          : 
-Output File         : E:\Project\FGCL-4592-858\csr\dev\output\tables\T-14-01-02-04.rtf
- 
-_____________________________________________________________________________________________
-Version History     : 
-Version     Date           Programmer                Description
--------     ----------     ----------                -----------
-1.0         2022-11-14     weineng.zhou              Creation
- 
-============================================================================================*/
-
 
 dm "log;clear;"; 
 proc datasets lib=work kill nolist memtype=data; 

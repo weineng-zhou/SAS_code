@@ -1,27 +1,4 @@
-/*==========================================================================================*
-Sponsor Name        : 杭州翰思生物医药有限公司
-Study   ID          : HX009-II-02
-Project Name        : 重组人源化抗 CD47/PD-1 双功能抗体 HX009 注射液治疗中国复发/难治性淋巴瘤患者的多中心、 开放、 单臂的Ⅰ /Ⅱ 期临床研究
-Program Name        : t-14-3-5-1.sas
-Program Path        : E:\Project\HX009-II-02\csr\val\pg\tables
-Program Language    : SAS v9.4
-_____________________________________________________________________________________________
- 
-Purpose             : to create output T-14-03-05-01.rtf
- 
-Macro Calls         : %Mstrtrtf2, %preview 
- 
-Input File          : 
-Output File         : E:\Project\HX009-II-02\csr\dev\output\tables\T-14-03-05-01.rtf
- 
-_____________________________________________________________________________________________
-Version History     : 
-Version     Date           Programmer                Description
--------     ----------     ----------                -----------
-1.0         2022-09-05     weineng.zhou              Creation
- 
-============================================================================================*/
- 
+
 
 dm "log;clear;"; 
 proc datasets lib=work kill nolist memtype=data; 

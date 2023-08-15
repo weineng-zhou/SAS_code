@@ -1,25 +1,3 @@
-/*==========================================================================================*
-Sponsor Name        : 
-Study   ID          : 
-Project Name        : 
-Program Name        : t-soc-pt-grd.sas
-Program Path        : E:\Project\EDP125P3101\csr\val\pg\tables
-Program Language    : SAS v9.4
-_____________________________________________________________________________________________
- 
-Purpose             : to create output T-14-03-01-03-01.rtf, T-14-03-01-03-02.rtf, T-14-03-01-03-03.rtf, T-14-03-01-03-04.rtf, T-14-03-01-03-05.rtf, T-14-03-01-03-06.rtf, T-14-03-01-03-07.rtf, T-14-03-01-03-08.rtf
- 
-Macro Calls         : %Mstrtrtf2, %preview 
- 
-Input File          : 
-Output File         : E:\Project\EDP125P3101\csr\dev\output\tables\T-14-03-01-03-01.rtf 
-_____________________________________________________________________________________________
-Version History     : 
-Version     Date           Programmer                Description
--------     ----------     ----------                -----------
-1.0         2022-11-04     weineng.zhou              Creation
- 
-============================================================================================*/
 
 
 dm "log;clear;"; 
@@ -386,7 +364,7 @@ run;
 %end;
 
 
-%let header_list = ÏµÍ³Æ÷¹Ù·ÖÀà~@w@w@w@wÊ×Ñ¡ÊõÓï~@w@w@w@w@w@w@w@w¶¾ÐÔµÈ¼¶|µÍ¼ÁÁ¿×é~N=&N1~n(%)|ÖÐ¼ÁÁ¿×é~N=&N2~n(%)|¸ß¼ÁÁ¿×é~N=&N3~n(%)|ºÏ¼Æ~N=&N4~n(%);
+%let header_list = ÏµÍ³ï¿½ï¿½ï¿½Ù·ï¿½ï¿½ï¿½~@w@w@w@wï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½~@w@w@w@w@w@w@w@wï¿½ï¿½ï¿½ÔµÈ¼ï¿½|ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½~N=&N1~n(%)|ï¿½Ð¼ï¿½ï¿½ï¿½ï¿½ï¿½~N=&N2~n(%)|ï¿½ß¼ï¿½ï¿½ï¿½ï¿½ï¿½~N=&N3~n(%)|ï¿½Ï¼ï¿½~N=&N4~n(%);
 
 
 options papersize=letter orientation=landscape nodate nonumber center missing=" " nobyline; 
