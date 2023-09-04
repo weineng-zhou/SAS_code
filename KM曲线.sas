@@ -24,8 +24,8 @@ quit;
 %let adam=adtte;
 
 
-%let trt1=Responder;
-%let trt2=Non-responder;
+%let trt1=è¯•éªŒç»„;
+%let trt2=å¯¹ç…§ç»„;
 
 
 %if &AnaSet.=ITTFL %then %do;
@@ -44,13 +44,13 @@ quit;
 
 proc format;
 	value trtp
-	1="Responder"
-	2="Non-responder"
+	1="è¯•éªŒç»„"
+	2="å¯¹ç…§ç»„"
 	;
 quit;
 
 
-*µã¹À¼ÆÓëÇø¼ä¹À¼Æ;
+*ç‚¹ä¼°è®¡ä¸åŒºé—´ä¼°è®¡;
 %macro point_CI(dsin=,dsout=,var_list=, fmt=);
 
 %if &dsout= %then %do;
@@ -120,7 +120,7 @@ data &adam.;
 run;
 
 
-*ÊÂ¼şÊı;
+*äº‹ä»¶æ•°;
 proc sql;
 	create table event0 as
 	select &trtvar.n, count(distinct usubjid) as count
@@ -163,7 +163,7 @@ proc lifetest data=&adam. method=KM plots=survival(atrisk=&x_order.);
 run;
 
 
-*ÖĞÎ»Êı;
+*ä¸­ä½æ•°;
 data median;
 	set Quartiles;
 	if percent=50; 
@@ -210,7 +210,7 @@ run;
 
 
 *HAZARD RITIO;
-*Ğ­±äÁ¿;
+*åå˜é‡;
 /*data temp;*/
 /*	set &adam.;*/
 /*run;*/
@@ -353,7 +353,7 @@ proc template;
 
 						*drawtext textattrs=(family="Arial" size=8 weight=bold color=red) "&median1" / anchor=bottom width=10 x=40 y=10;
 						*drawtext textattrs=(family="Arial" size=8 weight=bold color=red) "&median2" / anchor=bottom width=10 x=40 y=10;
-						*ÊÂ¼ş¡¢ÖĞÎ»Êı¡¢ÖĞÎ»Ê±¼ä¡¢´¦ÓÚ·çÏÕÖĞµÄÊÜÊÔÕßÊı¡¢·çÏÕ±È;
+						*äº‹ä»¶ã€ä¸­ä½æ•°ã€ä¸­ä½æ—¶é—´ã€å¤„äºé£é™©ä¸­çš„å—è¯•è€…æ•°ã€é£é™©æ¯”;
 						layout gridded /valign=0.1 halign=0.1 border=false;  
 							entry halign=right '             Event            Median (95%CI)' / textattrs=(family="Arial" size=8pt );
 							entry halign=right "&trt1  &event1. (&percent1."'%)        ' "&MEDIANCI1." / textattrs=(family="Arial" size=8pt COLOR=&COLOR1.);
